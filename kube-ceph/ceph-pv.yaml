@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ceph-pv
+#  namespace: cephfs
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  cephfs:
+    monitors:
+      - 1.1.1.1:6789
+      - 1.1.1.2:6789
+      - 1.1.1.3:6789
+    path: /
+    user: admin
+    secretRef:
+      name: ceph-secret
+  persistentVolumeReclaimPolicy: Recycle

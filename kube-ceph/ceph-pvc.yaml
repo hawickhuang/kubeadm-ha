@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ceph-pvc
+#  namespace: cephfs
+spec:
+  accessModes:
+    - ReadWriteMany
+  volumeName: ceph-pv
+  resources:
+    requests:
+      storage: 1Gi
