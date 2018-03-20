@@ -289,11 +289,11 @@
 
 ## k8s挂载cephfs
 
-1. 更改ceph下ceph-secret文件，将key的值替换为你的ceph集群的secret串（base64格式化后）
+1. 更改kube-ceph下ceph-secret文件，将key的值替换为你的ceph集群的secret串（base64格式化后）
 
-2. 更改ceph下ceph-pv.yaml和ceph-pvc.yaml文件，将storage的值替换为你的osd的存储总值
+2. 更改kube-ceph下ceph-pv.yaml和ceph-pvc.yaml文件，将storage的值替换为你的osd的存储总值
 
 3. 创建ceph挂载
     ```bash
-    kubeadm apply -f ceph/
+    kubeadm apply -f kube-ceph/
     ```
