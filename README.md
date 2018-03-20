@@ -297,3 +297,7 @@
     ```bash
     kubeadm apply -f kube-ceph/
     ```
+    
+ ## 参考文档
+ 
+1. https://github.com/cookeem/kubeadm-ha/blob/master/README_CN.md#kubernetes%E7%9B%B8%E5%85%B3%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85
