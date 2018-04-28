@@ -10,9 +10,7 @@ subjects:
 - kind: ServiceAccount
   name: heapster
   namespace: kube-system
-root@ip-172-31-123-25:~/kubeadm-ha/kube-heapster# cat influxdb/
-grafana.yaml   heapster.yaml  influxdb.yaml
-root@ip-172-31-123-25:~/kubeadm-ha/kube-heapster# cat influxdb/influxdb.yaml
+---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
