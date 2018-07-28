@@ -1,7 +1,7 @@
 version: '2'
 services:
   etcd:
-    image: gcr.io/google_containers/etcd-amd64:3.1.17
+    image: gcr.io/google_containers/etcd-amd64:3.2.18
     container_name: etcd
     hostname: etcd
     volumes:
