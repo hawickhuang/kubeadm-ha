@@ -1,6 +1,6 @@
 apiVersion: kubeadm.k8s.io/v1alpha1
 kind: MasterConfiguration
-kubernetesVersion: v1.9.3
+kubernetesVersion: v1.11.3
 networking:
   podSubnet: K8SHA_CIDR
 apiServerCertSANs:
