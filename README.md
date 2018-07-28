@@ -143,25 +143,19 @@
 3. 验证etcd集群状态
     ```bash
         docker exec -ti etcd etcdctl cluster-health
-        docker exec -ti etcd etcdctl cluster-health
     ```
 
 ## 初始化第一台master
 
 1. 重置master网络
     ```bash
-    systemctl stop kubele
-    systemctl stop kubele
-    systemctl stop kubele
-    systemctl stop kubele
+    systemctl stop kubelet
     rm -rf /etc/cni/
     ```
 
 2. 删除遗留的网络
     ```bash
     ip a | grep -E 'docker|flannel|cni'
-    ip a | grep -E 'docker|flannel|cni'
-    ip link del flannel.1
     ip link del flannel.1
 
     # 重启docker和kubelet，检查网络情况
